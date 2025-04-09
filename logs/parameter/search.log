@@ -1,0 +1,328 @@
+Loading CIFAR-10 data...
+CIFAR-10数据集已存在于 ./data/cifar-10-batches-py
+Starting grid search with 64 combinations...
+
+Trial 1/64
+Parameters: {'hidden1_size': 128, 'hidden2_size': 64, 'activation': 'relu', 'learning_rate': 0.001, 'weight_decay': 0.001, 'dropout': 0.3, 'batch_size': 32}
+Validation accuracy: 0.4512
+New best validation accuracy: 0.4512
+Best parameters: {'hidden1_size': 128, 'hidden2_size': 64, 'activation': 'relu', 'learning_rate': 0.001, 'weight_decay': 0.001, 'dropout': 0.3, 'batch_size': 32}
+
+Trial 2/64
+Parameters: {'hidden1_size': 128, 'hidden2_size': 64, 'activation': 'relu', 'learning_rate': 0.001, 'weight_decay': 0.001, 'dropout': 0.3, 'batch_size': 64}
+Validation accuracy: 0.4356
+
+Trial 3/64
+Parameters: {'hidden1_size': 128, 'hidden2_size': 64, 'activation': 'relu', 'learning_rate': 0.001, 'weight_decay': 0.001, 'dropout': 0.0, 'batch_size': 32}
+Validation accuracy: 0.4838
+New best validation accuracy: 0.4838
+Best parameters: {'hidden1_size': 128, 'hidden2_size': 64, 'activation': 'relu', 'learning_rate': 0.001, 'weight_decay': 0.001, 'dropout': 0.0, 'batch_size': 32}
+
+Trial 4/64
+Parameters: {'hidden1_size': 128, 'hidden2_size': 64, 'activation': 'relu', 'learning_rate': 0.001, 'weight_decay': 0.001, 'dropout': 0.0, 'batch_size': 64}
+Validation accuracy: 0.4790
+
+Trial 5/64
+Parameters: {'hidden1_size': 128, 'hidden2_size': 64, 'activation': 'relu', 'learning_rate': 0.001, 'weight_decay': 0.0001, 'dropout': 0.3, 'batch_size': 32}
+Validation accuracy: 0.4608
+
+Trial 6/64
+Parameters: {'hidden1_size': 128, 'hidden2_size': 64, 'activation': 'relu', 'learning_rate': 0.001, 'weight_decay': 0.0001, 'dropout': 0.3, 'batch_size': 64}
+Validation accuracy: 0.4454
+
+Trial 7/64
+Parameters: {'hidden1_size': 128, 'hidden2_size': 64, 'activation': 'relu', 'learning_rate': 0.001, 'weight_decay': 0.0001, 'dropout': 0.0, 'batch_size': 32}
+Validation accuracy: 0.4922
+New best validation accuracy: 0.4922
+Best parameters: {'hidden1_size': 128, 'hidden2_size': 64, 'activation': 'relu', 'learning_rate': 0.001, 'weight_decay': 0.0001, 'dropout': 0.0, 'batch_size': 32}
+
+Trial 8/64
+Parameters: {'hidden1_size': 128, 'hidden2_size': 64, 'activation': 'relu', 'learning_rate': 0.001, 'weight_decay': 0.0001, 'dropout': 0.0, 'batch_size': 64}
+Validation accuracy: 0.4846
+
+Trial 9/64
+Parameters: {'hidden1_size': 128, 'hidden2_size': 64, 'activation': 'relu', 'learning_rate': 0.0001, 'weight_decay': 0.001, 'dropout': 0.3, 'batch_size': 32}
+Validation accuracy: 0.4012
+
+Trial 10/64
+Parameters: {'hidden1_size': 128, 'hidden2_size': 64, 'activation': 'relu', 'learning_rate': 0.0001, 'weight_decay': 0.001, 'dropout': 0.3, 'batch_size': 64}
+Validation accuracy: 0.3834
+
+Trial 11/64
+Parameters: {'hidden1_size': 128, 'hidden2_size': 64, 'activation': 'relu', 'learning_rate': 0.0001, 'weight_decay': 0.001, 'dropout': 0.0, 'batch_size': 32}
+Validation accuracy: 0.4372
+
+Trial 12/64
+Parameters: {'hidden1_size': 128, 'hidden2_size': 64, 'activation': 'relu', 'learning_rate': 0.0001, 'weight_decay': 0.001, 'dropout': 0.0, 'batch_size': 64}
+Validation accuracy: 0.4038
+
+Trial 13/64
+Parameters: {'hidden1_size': 128, 'hidden2_size': 64, 'activation': 'relu', 'learning_rate': 0.0001, 'weight_decay': 0.0001, 'dropout': 0.3, 'batch_size': 32}
+Validation accuracy: 0.4104
+
+Trial 14/64
+Parameters: {'hidden1_size': 128, 'hidden2_size': 64, 'activation': 'relu', 'learning_rate': 0.0001, 'weight_decay': 0.0001, 'dropout': 0.3, 'batch_size': 64}
+Validation accuracy: 0.3734
+
+Trial 15/64
+Parameters: {'hidden1_size': 128, 'hidden2_size': 64, 'activation': 'relu', 'learning_rate': 0.0001, 'weight_decay': 0.0001, 'dropout': 0.0, 'batch_size': 32}
+Validation accuracy: 0.4390
+
+Trial 16/64
+Parameters: {'hidden1_size': 128, 'hidden2_size': 64, 'activation': 'relu', 'learning_rate': 0.0001, 'weight_decay': 0.0001, 'dropout': 0.0, 'batch_size': 64}
+Validation accuracy: 0.4040
+
+Trial 17/64
+Parameters: {'hidden1_size': 128, 'hidden2_size': 128, 'activation': 'relu', 'learning_rate': 0.001, 'weight_decay': 0.001, 'dropout': 0.3, 'batch_size': 32}
+Validation accuracy: 0.4640
+
+Trial 18/64
+Parameters: {'hidden1_size': 128, 'hidden2_size': 128, 'activation': 'relu', 'learning_rate': 0.001, 'weight_decay': 0.001, 'dropout': 0.3, 'batch_size': 64}
+Validation accuracy: 0.4548
+
+Trial 19/64
+Parameters: {'hidden1_size': 128, 'hidden2_size': 128, 'activation': 'relu', 'learning_rate': 0.001, 'weight_decay': 0.001, 'dropout': 0.0, 'batch_size': 32}
+Validation accuracy: 0.4800
+
+Trial 20/64
+Parameters: {'hidden1_size': 128, 'hidden2_size': 128, 'activation': 'relu', 'learning_rate': 0.001, 'weight_decay': 0.001, 'dropout': 0.0, 'batch_size': 64}
+Validation accuracy: 0.4724
+
+Trial 21/64
+Parameters: {'hidden1_size': 128, 'hidden2_size': 128, 'activation': 'relu', 'learning_rate': 0.001, 'weight_decay': 0.0001, 'dropout': 0.3, 'batch_size': 32}
+Validation accuracy: 0.4656
+
+Trial 22/64
+Parameters: {'hidden1_size': 128, 'hidden2_size': 128, 'activation': 'relu', 'learning_rate': 0.001, 'weight_decay': 0.0001, 'dropout': 0.3, 'batch_size': 64}
+Validation accuracy: 0.4500
+
+Trial 23/64
+Parameters: {'hidden1_size': 128, 'hidden2_size': 128, 'activation': 'relu', 'learning_rate': 0.001, 'weight_decay': 0.0001, 'dropout': 0.0, 'batch_size': 32}
+Validation accuracy: 0.4806
+
+Trial 24/64
+Parameters: {'hidden1_size': 128, 'hidden2_size': 128, 'activation': 'relu', 'learning_rate': 0.001, 'weight_decay': 0.0001, 'dropout': 0.0, 'batch_size': 64}
+Validation accuracy: 0.4878
+
+Trial 25/64
+Parameters: {'hidden1_size': 128, 'hidden2_size': 128, 'activation': 'relu', 'learning_rate': 0.0001, 'weight_decay': 0.001, 'dropout': 0.3, 'batch_size': 32}
+Validation accuracy: 0.4120
+
+Trial 26/64
+Parameters: {'hidden1_size': 128, 'hidden2_size': 128, 'activation': 'relu', 'learning_rate': 0.0001, 'weight_decay': 0.001, 'dropout': 0.3, 'batch_size': 64}
+Validation accuracy: 0.3846
+
+Trial 27/64
+Parameters: {'hidden1_size': 128, 'hidden2_size': 128, 'activation': 'relu', 'learning_rate': 0.0001, 'weight_decay': 0.001, 'dropout': 0.0, 'batch_size': 32}
+Validation accuracy: 0.4412
+
+Trial 28/64
+Parameters: {'hidden1_size': 128, 'hidden2_size': 128, 'activation': 'relu', 'learning_rate': 0.0001, 'weight_decay': 0.001, 'dropout': 0.0, 'batch_size': 64}
+Validation accuracy: 0.4116
+
+Trial 29/64
+Parameters: {'hidden1_size': 128, 'hidden2_size': 128, 'activation': 'relu', 'learning_rate': 0.0001, 'weight_decay': 0.0001, 'dropout': 0.3, 'batch_size': 32}
+Validation accuracy: 0.4142
+
+Trial 30/64
+Parameters: {'hidden1_size': 128, 'hidden2_size': 128, 'activation': 'relu', 'learning_rate': 0.0001, 'weight_decay': 0.0001, 'dropout': 0.3, 'batch_size': 64}
+Validation accuracy: 0.3904
+
+Trial 31/64
+Parameters: {'hidden1_size': 128, 'hidden2_size': 128, 'activation': 'relu', 'learning_rate': 0.0001, 'weight_decay': 0.0001, 'dropout': 0.0, 'batch_size': 32}
+Validation accuracy: 0.4358
+
+Trial 32/64
+Parameters: {'hidden1_size': 128, 'hidden2_size': 128, 'activation': 'relu', 'learning_rate': 0.0001, 'weight_decay': 0.0001, 'dropout': 0.0, 'batch_size': 64}
+Validation accuracy: 0.4070
+
+Trial 33/64
+Parameters: {'hidden1_size': 256, 'hidden2_size': 64, 'activation': 'relu', 'learning_rate': 0.001, 'weight_decay': 0.001, 'dropout': 0.3, 'batch_size': 32}
+Validation accuracy: 0.4668
+
+Trial 34/64
+Parameters: {'hidden1_size': 256, 'hidden2_size': 64, 'activation': 'relu', 'learning_rate': 0.001, 'weight_decay': 0.001, 'dropout': 0.3, 'batch_size': 64}
+Validation accuracy: 0.4572
+
+Trial 35/64
+Parameters: {'hidden1_size': 256, 'hidden2_size': 64, 'activation': 'relu', 'learning_rate': 0.001, 'weight_decay': 0.001, 'dropout': 0.0, 'batch_size': 32}
+Validation accuracy: 0.4910
+
+Trial 36/64
+Parameters: {'hidden1_size': 256, 'hidden2_size': 64, 'activation': 'relu', 'learning_rate': 0.001, 'weight_decay': 0.001, 'dropout': 0.0, 'batch_size': 64}
+Validation accuracy: 0.4916
+
+Trial 37/64
+Parameters: {'hidden1_size': 256, 'hidden2_size': 64, 'activation': 'relu', 'learning_rate': 0.001, 'weight_decay': 0.0001, 'dropout': 0.3, 'batch_size': 32}
+Validation accuracy: 0.4764
+
+Trial 38/64
+Parameters: {'hidden1_size': 256, 'hidden2_size': 64, 'activation': 'relu', 'learning_rate': 0.001, 'weight_decay': 0.0001, 'dropout': 0.3, 'batch_size': 64}
+Validation accuracy: 0.4488
+
+Trial 39/64
+Parameters: {'hidden1_size': 256, 'hidden2_size': 64, 'activation': 'relu', 'learning_rate': 0.001, 'weight_decay': 0.0001, 'dropout': 0.0, 'batch_size': 32}
+Validation accuracy: 0.4956
+New best validation accuracy: 0.4956
+Best parameters: {'hidden1_size': 256, 'hidden2_size': 64, 'activation': 'relu', 'learning_rate': 0.001, 'weight_decay': 0.0001, 'dropout': 0.0, 'batch_size': 32}
+
+Trial 40/64
+Parameters: {'hidden1_size': 256, 'hidden2_size': 64, 'activation': 'relu', 'learning_rate': 0.001, 'weight_decay': 0.0001, 'dropout': 0.0, 'batch_size': 64}
+Validation accuracy: 0.4914
+
+Trial 41/64
+Parameters: {'hidden1_size': 256, 'hidden2_size': 64, 'activation': 'relu', 'learning_rate': 0.0001, 'weight_decay': 0.001, 'dropout': 0.3, 'batch_size': 32}
+Validation accuracy: 0.4168
+
+Trial 42/64
+Parameters: {'hidden1_size': 256, 'hidden2_size': 64, 'activation': 'relu', 'learning_rate': 0.0001, 'weight_decay': 0.001, 'dropout': 0.3, 'batch_size': 64}
+Validation accuracy: 0.3880
+
+Trial 43/64
+Parameters: {'hidden1_size': 256, 'hidden2_size': 64, 'activation': 'relu', 'learning_rate': 0.0001, 'weight_decay': 0.001, 'dropout': 0.0, 'batch_size': 32}
+Validation accuracy: 0.4356
+
+Trial 44/64
+Parameters: {'hidden1_size': 256, 'hidden2_size': 64, 'activation': 'relu', 'learning_rate': 0.0001, 'weight_decay': 0.001, 'dropout': 0.0, 'batch_size': 64}
+Validation accuracy: 0.4128
+
+Trial 45/64
+Parameters: {'hidden1_size': 256, 'hidden2_size': 64, 'activation': 'relu', 'learning_rate': 0.0001, 'weight_decay': 0.0001, 'dropout': 0.3, 'batch_size': 32}
+Validation accuracy: 0.4152
+
+Trial 46/64
+Parameters: {'hidden1_size': 256, 'hidden2_size': 64, 'activation': 'relu', 'learning_rate': 0.0001, 'weight_decay': 0.0001, 'dropout': 0.3, 'batch_size': 64}
+Validation accuracy: 0.3790
+
+Trial 47/64
+Parameters: {'hidden1_size': 256, 'hidden2_size': 64, 'activation': 'relu', 'learning_rate': 0.0001, 'weight_decay': 0.0001, 'dropout': 0.0, 'batch_size': 32}
+Validation accuracy: 0.4460
+
+Trial 48/64
+Parameters: {'hidden1_size': 256, 'hidden2_size': 64, 'activation': 'relu', 'learning_rate': 0.0001, 'weight_decay': 0.0001, 'dropout': 0.0, 'batch_size': 64}
+Validation accuracy: 0.4162
+
+Trial 49/64
+Parameters: {'hidden1_size': 256, 'hidden2_size': 128, 'activation': 'relu', 'learning_rate': 0.001, 'weight_decay': 0.001, 'dropout': 0.3, 'batch_size': 32}
+Validation accuracy: 0.4720
+
+Trial 50/64
+Parameters: {'hidden1_size': 256, 'hidden2_size': 128, 'activation': 'relu', 'learning_rate': 0.001, 'weight_decay': 0.001, 'dropout': 0.3, 'batch_size': 64}
+Validation accuracy: 0.4638
+
+Trial 51/64
+Parameters: {'hidden1_size': 256, 'hidden2_size': 128, 'activation': 'relu', 'learning_rate': 0.001, 'weight_decay': 0.001, 'dropout': 0.0, 'batch_size': 32}
+Validation accuracy: 0.4942
+
+Trial 52/64
+Parameters: {'hidden1_size': 256, 'hidden2_size': 128, 'activation': 'relu', 'learning_rate': 0.001, 'weight_decay': 0.001, 'dropout': 0.0, 'batch_size': 64}
+Validation accuracy: 0.4890
+
+Trial 53/64
+Parameters: {'hidden1_size': 256, 'hidden2_size': 128, 'activation': 'relu', 'learning_rate': 0.001, 'weight_decay': 0.0001, 'dropout': 0.3, 'batch_size': 32}
+Validation accuracy: 0.4732
+
+Trial 54/64
+Parameters: {'hidden1_size': 256, 'hidden2_size': 128, 'activation': 'relu', 'learning_rate': 0.001, 'weight_decay': 0.0001, 'dropout': 0.3, 'batch_size': 64}
+Validation accuracy: 0.4714
+
+Trial 55/64
+Parameters: {'hidden1_size': 256, 'hidden2_size': 128, 'activation': 'relu', 'learning_rate': 0.001, 'weight_decay': 0.0001, 'dropout': 0.0, 'batch_size': 32}
+Validation accuracy: 0.4964
+New best validation accuracy: 0.4964
+Best parameters: {'hidden1_size': 256, 'hidden2_size': 128, 'activation': 'relu', 'learning_rate': 0.001, 'weight_decay': 0.0001, 'dropout': 0.0, 'batch_size': 32}
+
+Trial 56/64
+Parameters: {'hidden1_size': 256, 'hidden2_size': 128, 'activation': 'relu', 'learning_rate': 0.001, 'weight_decay': 0.0001, 'dropout': 0.0, 'batch_size': 64}
+Validation accuracy: 0.4942
+
+Trial 57/64
+Parameters: {'hidden1_size': 256, 'hidden2_size': 128, 'activation': 'relu', 'learning_rate': 0.0001, 'weight_decay': 0.001, 'dropout': 0.3, 'batch_size': 32}
+Validation accuracy: 0.4218
+
+Trial 58/64
+Parameters: {'hidden1_size': 256, 'hidden2_size': 128, 'activation': 'relu', 'learning_rate': 0.0001, 'weight_decay': 0.001, 'dropout': 0.3, 'batch_size': 64}
+Validation accuracy: 0.3958
+
+Trial 59/64
+Parameters: {'hidden1_size': 256, 'hidden2_size': 128, 'activation': 'relu', 'learning_rate': 0.0001, 'weight_decay': 0.001, 'dropout': 0.0, 'batch_size': 32}
+Validation accuracy: 0.4450
+
+Trial 60/64
+Parameters: {'hidden1_size': 256, 'hidden2_size': 128, 'activation': 'relu', 'learning_rate': 0.0001, 'weight_decay': 0.001, 'dropout': 0.0, 'batch_size': 64}
+Validation accuracy: 0.4198
+
+Trial 61/64
+Parameters: {'hidden1_size': 256, 'hidden2_size': 128, 'activation': 'relu', 'learning_rate': 0.0001, 'weight_decay': 0.0001, 'dropout': 0.3, 'batch_size': 32}
+Validation accuracy: 0.4192
+
+Trial 62/64
+Parameters: {'hidden1_size': 256, 'hidden2_size': 128, 'activation': 'relu', 'learning_rate': 0.0001, 'weight_decay': 0.0001, 'dropout': 0.3, 'batch_size': 64}
+Validation accuracy: 0.3880
+
+Trial 63/64
+Parameters: {'hidden1_size': 256, 'hidden2_size': 128, 'activation': 'relu', 'learning_rate': 0.0001, 'weight_decay': 0.0001, 'dropout': 0.0, 'batch_size': 32}
+Validation accuracy: 0.4440
+
+Trial 64/64
+Parameters: {'hidden1_size': 256, 'hidden2_size': 128, 'activation': 'relu', 'learning_rate': 0.0001, 'weight_decay': 0.0001, 'dropout': 0.0, 'batch_size': 64}
+Validation accuracy: 0.4100
+
+Grid search completed in 3871.08 seconds
+Results saved to ./logs/parameter/grid_reasearch_results.pkl
+Best validation accuracy: 0.4964
+Best parameters: {'hidden1_size': 256, 'hidden2_size': 128, 'activation': 'relu', 'learning_rate': 0.001, 'weight_decay': 0.0001, 'dropout': 0.0, 'batch_size': 32}
+详细报告已保存到 ./logs/parameter/hyperparameter_search_report.txt
+
+前5个最佳参数组合:
+------------------------------
+
+组合 1:
+hidden1_size: 256
+hidden2_size: 128
+activation: relu
+learning_rate: 0.001
+weight_decay: 0.0001
+dropout: 0.0
+batch_size: 32
+验证准确率: 0.4964
+
+组合 2:
+hidden1_size: 256
+hidden2_size: 64
+activation: relu
+learning_rate: 0.001
+weight_decay: 0.0001
+dropout: 0.0
+batch_size: 32
+验证准确率: 0.4956
+
+组合 3:
+hidden1_size: 256
+hidden2_size: 128
+activation: relu
+learning_rate: 0.001
+weight_decay: 0.001
+dropout: 0.0
+batch_size: 32
+验证准确率: 0.4942
+
+组合 4:
+hidden1_size: 256
+hidden2_size: 128
+activation: relu
+learning_rate: 0.001
+weight_decay: 0.0001
+dropout: 0.0
+batch_size: 64
+验证准确率: 0.4942
+
+组合 5:
+hidden1_size: 128
+hidden2_size: 64
+activation: relu
+learning_rate: 0.001
+weight_decay: 0.0001
+dropout: 0.0
+batch_size: 32
+验证准确率: 0.4922

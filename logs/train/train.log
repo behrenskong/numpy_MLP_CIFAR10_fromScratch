@@ -1,0 +1,229 @@
+
+============================================================
+训练开始
+============================================================
+随机种子: 42
+
+------------------------------------------------------------
+数据加载
+------------------------------------------------------------
+正在加载CIFAR-10数据...
+CIFAR-10数据集已存在于 ./data/cifar-10-batches-py
+训练集: 45000 样本
+验证集: 5000 样本
+测试集: 10000 样本
+输入特征维度: 3072
+
+------------------------------------------------------------
+模型创建
+------------------------------------------------------------
+模型架构: 3072 -> 512 -> 64 -> 10
+激活函数: relu
+权重衰减: 0.0005
+Dropout率: 0.0
+模型结构已保存到: ./models/model_config.pkl
+
+------------------------------------------------------------
+优化器设置
+------------------------------------------------------------
+优化器: SGD
+初始学习率: 0.001
+动量: 0.9
+学习率衰减: 0.95
+
+------------------------------------------------------------
+开始训练
+------------------------------------------------------------
+训练集大小: 45000, 批量大小: 64
+训练轮数: 15
+打印频率: 每100批次
+------------------------------------------------------------
+Starting training...
+Training set size: 45000, Number of batches: 704, Batch size: 64
+Initial learning rate: 0.001
+Learning rate schedule: Each epoch multiply by 0.95
+
+Epoch: 1/15, Batch: 100/704, Loss: 2.4797, Accuracy: 0.2031, LR: 0.001000
+Epoch: 1/15, Batch: 200/704, Loss: 2.0809, Accuracy: 0.4375, LR: 0.001000
+Epoch: 1/15, Batch: 300/704, Loss: 2.0790, Accuracy: 0.3281, LR: 0.001000
+Epoch: 1/15, Batch: 400/704, Loss: 2.0101, Accuracy: 0.3125, LR: 0.001000
+Epoch: 1/15, Batch: 500/704, Loss: 1.9329, Accuracy: 0.4062, LR: 0.001000
+Epoch: 1/15, Batch: 600/704, Loss: 1.9717, Accuracy: 0.4219, LR: 0.001000
+Epoch: 1/15, Batch: 700/704, Loss: 1.8234, Accuracy: 0.4844, LR: 0.001000
+Epoch 1/15 - Time: 15.25s - Train Loss: 2.0478, Train Accuracy: 0.3822, Val Loss: 1.9242, Val Accuracy: 0.4288
+模型已保存到 ./models/best_model.pkl
+New best model saved to ./models/best_model.pkl, validation accuracy: 0.4288 at epoch 1
+Epoch: 2/15, Batch: 100/704, Loss: 1.7843, Accuracy: 0.4844, LR: 0.000950
+Epoch: 2/15, Batch: 200/704, Loss: 1.7907, Accuracy: 0.4375, LR: 0.000950
+Epoch: 2/15, Batch: 300/704, Loss: 1.8489, Accuracy: 0.3750, LR: 0.000950
+Epoch: 2/15, Batch: 400/704, Loss: 1.7200, Accuracy: 0.4688, LR: 0.000950
+Epoch: 2/15, Batch: 500/704, Loss: 1.5624, Accuracy: 0.5156, LR: 0.000950
+Epoch: 2/15, Batch: 600/704, Loss: 1.9217, Accuracy: 0.4375, LR: 0.000950
+Epoch: 2/15, Batch: 700/704, Loss: 1.8425, Accuracy: 0.4375, LR: 0.000950
+Epoch 2/15 - Time: 16.30s - Train Loss: 1.7800, Train Accuracy: 0.4785, Val Loss: 1.8282, Val Accuracy: 0.4516
+模型已保存到 ./models/best_model.pkl
+New best model saved to ./models/best_model.pkl, validation accuracy: 0.4516 at epoch 2
+Epoch: 3/15, Batch: 100/704, Loss: 1.6184, Accuracy: 0.5469, LR: 0.000902
+Epoch: 3/15, Batch: 200/704, Loss: 1.7138, Accuracy: 0.4531, LR: 0.000902
+Epoch: 3/15, Batch: 300/704, Loss: 1.8374, Accuracy: 0.4531, LR: 0.000902
+Epoch: 3/15, Batch: 400/704, Loss: 1.5429, Accuracy: 0.5312, LR: 0.000902
+Epoch: 3/15, Batch: 500/704, Loss: 1.6418, Accuracy: 0.5156, LR: 0.000902
+Epoch: 3/15, Batch: 600/704, Loss: 1.6588, Accuracy: 0.4219, LR: 0.000902
+Epoch: 3/15, Batch: 700/704, Loss: 1.6404, Accuracy: 0.4844, LR: 0.000902
+Epoch 3/15 - Time: 17.36s - Train Loss: 1.6628, Train Accuracy: 0.5237, Val Loss: 1.7832, Val Accuracy: 0.4686
+模型已保存到 ./models/best_model.pkl
+New best model saved to ./models/best_model.pkl, validation accuracy: 0.4686 at epoch 3
+Epoch: 4/15, Batch: 100/704, Loss: 1.5004, Accuracy: 0.5625, LR: 0.000857
+Epoch: 4/15, Batch: 200/704, Loss: 1.7028, Accuracy: 0.5625, LR: 0.000857
+Epoch: 4/15, Batch: 300/704, Loss: 1.6380, Accuracy: 0.6406, LR: 0.000857
+Epoch: 4/15, Batch: 400/704, Loss: 1.4794, Accuracy: 0.5312, LR: 0.000857
+Epoch: 4/15, Batch: 500/704, Loss: 1.3003, Accuracy: 0.7031, LR: 0.000857
+Epoch: 4/15, Batch: 600/704, Loss: 1.5992, Accuracy: 0.5938, LR: 0.000857
+Epoch: 4/15, Batch: 700/704, Loss: 1.4688, Accuracy: 0.5469, LR: 0.000857
+Epoch 4/15 - Time: 18.55s - Train Loss: 1.5802, Train Accuracy: 0.5495, Val Loss: 1.7442, Val Accuracy: 0.4878
+模型已保存到 ./models/best_model.pkl
+New best model saved to ./models/best_model.pkl, validation accuracy: 0.4878 at epoch 4
+Epoch: 5/15, Batch: 100/704, Loss: 1.5139, Accuracy: 0.5000, LR: 0.000815
+Epoch: 5/15, Batch: 200/704, Loss: 1.5576, Accuracy: 0.5938, LR: 0.000815
+Epoch: 5/15, Batch: 300/704, Loss: 1.4992, Accuracy: 0.5625, LR: 0.000815
+Epoch: 5/15, Batch: 400/704, Loss: 1.6066, Accuracy: 0.5312, LR: 0.000815
+Epoch: 5/15, Batch: 500/704, Loss: 1.5607, Accuracy: 0.5625, LR: 0.000815
+Epoch: 5/15, Batch: 600/704, Loss: 1.4588, Accuracy: 0.4844, LR: 0.000815
+Epoch: 5/15, Batch: 700/704, Loss: 1.6002, Accuracy: 0.5156, LR: 0.000815
+Epoch 5/15 - Time: 18.84s - Train Loss: 1.5129, Train Accuracy: 0.5750, Val Loss: 1.7210, Val Accuracy: 0.4946
+模型已保存到 ./models/best_model.pkl
+New best model saved to ./models/best_model.pkl, validation accuracy: 0.4946 at epoch 5
+Epoch: 6/15, Batch: 100/704, Loss: 1.4884, Accuracy: 0.6719, LR: 0.000774
+Epoch: 6/15, Batch: 200/704, Loss: 1.5222, Accuracy: 0.5312, LR: 0.000774
+Epoch: 6/15, Batch: 300/704, Loss: 1.4686, Accuracy: 0.5938, LR: 0.000774
+Epoch: 6/15, Batch: 400/704, Loss: 1.3684, Accuracy: 0.5781, LR: 0.000774
+Epoch: 6/15, Batch: 500/704, Loss: 1.3040, Accuracy: 0.6562, LR: 0.000774
+Epoch: 6/15, Batch: 600/704, Loss: 1.5710, Accuracy: 0.5312, LR: 0.000774
+Epoch: 6/15, Batch: 700/704, Loss: 1.5048, Accuracy: 0.5625, LR: 0.000774
+Epoch 6/15 - Time: 18.11s - Train Loss: 1.4514, Train Accuracy: 0.5987, Val Loss: 1.7159, Val Accuracy: 0.4980
+模型已保存到 ./models/best_model.pkl
+New best model saved to ./models/best_model.pkl, validation accuracy: 0.4980 at epoch 6
+Epoch: 7/15, Batch: 100/704, Loss: 1.2531, Accuracy: 0.7344, LR: 0.000735
+Epoch: 7/15, Batch: 200/704, Loss: 1.3304, Accuracy: 0.5625, LR: 0.000735
+Epoch: 7/15, Batch: 300/704, Loss: 1.3592, Accuracy: 0.6094, LR: 0.000735
+Epoch: 7/15, Batch: 400/704, Loss: 1.3507, Accuracy: 0.6562, LR: 0.000735
+Epoch: 7/15, Batch: 500/704, Loss: 1.3897, Accuracy: 0.6094, LR: 0.000735
+Epoch: 7/15, Batch: 600/704, Loss: 1.4404, Accuracy: 0.5625, LR: 0.000735
+Epoch: 7/15, Batch: 700/704, Loss: 1.3785, Accuracy: 0.6406, LR: 0.000735
+Epoch 7/15 - Time: 18.05s - Train Loss: 1.3979, Train Accuracy: 0.6182, Val Loss: 1.7007, Val Accuracy: 0.5052
+模型已保存到 ./models/best_model.pkl
+New best model saved to ./models/best_model.pkl, validation accuracy: 0.5052 at epoch 7
+Epoch: 8/15, Batch: 100/704, Loss: 1.2742, Accuracy: 0.6875, LR: 0.000698
+Epoch: 8/15, Batch: 200/704, Loss: 1.3632, Accuracy: 0.6406, LR: 0.000698
+Epoch: 8/15, Batch: 300/704, Loss: 1.2158, Accuracy: 0.6719, LR: 0.000698
+Epoch: 8/15, Batch: 400/704, Loss: 1.3806, Accuracy: 0.6094, LR: 0.000698
+Epoch: 8/15, Batch: 500/704, Loss: 1.4426, Accuracy: 0.5781, LR: 0.000698
+Epoch: 8/15, Batch: 600/704, Loss: 1.4713, Accuracy: 0.5938, LR: 0.000698
+Epoch: 8/15, Batch: 700/704, Loss: 1.6625, Accuracy: 0.5625, LR: 0.000698
+Epoch 8/15 - Time: 19.19s - Train Loss: 1.3477, Train Accuracy: 0.6372, Val Loss: 1.7113, Val Accuracy: 0.5070
+模型已保存到 ./models/best_model.pkl
+New best model saved to ./models/best_model.pkl, validation accuracy: 0.5070 at epoch 8
+Epoch: 9/15, Batch: 100/704, Loss: 1.2649, Accuracy: 0.7344, LR: 0.000663
+Epoch: 9/15, Batch: 200/704, Loss: 1.2186, Accuracy: 0.7188, LR: 0.000663
+Epoch: 9/15, Batch: 300/704, Loss: 1.0766, Accuracy: 0.7031, LR: 0.000663
+Epoch: 9/15, Batch: 400/704, Loss: 1.2673, Accuracy: 0.6875, LR: 0.000663
+Epoch: 9/15, Batch: 500/704, Loss: 1.6186, Accuracy: 0.4844, LR: 0.000663
+Epoch: 9/15, Batch: 600/704, Loss: 1.4014, Accuracy: 0.5312, LR: 0.000663
+Epoch: 9/15, Batch: 700/704, Loss: 1.2813, Accuracy: 0.6094, LR: 0.000663
+Epoch 9/15 - Time: 19.51s - Train Loss: 1.3010, Train Accuracy: 0.6540, Val Loss: 1.7063, Val Accuracy: 0.5084
+模型已保存到 ./models/best_model.pkl
+New best model saved to ./models/best_model.pkl, validation accuracy: 0.5084 at epoch 9
+Epoch: 10/15, Batch: 100/704, Loss: 1.2384, Accuracy: 0.6875, LR: 0.000630
+Epoch: 10/15, Batch: 200/704, Loss: 1.1744, Accuracy: 0.6719, LR: 0.000630
+Epoch: 10/15, Batch: 300/704, Loss: 1.2632, Accuracy: 0.6875, LR: 0.000630
+Epoch: 10/15, Batch: 400/704, Loss: 1.4012, Accuracy: 0.6875, LR: 0.000630
+Epoch: 10/15, Batch: 500/704, Loss: 1.2128, Accuracy: 0.7188, LR: 0.000630
+Epoch: 10/15, Batch: 600/704, Loss: 1.0751, Accuracy: 0.7344, LR: 0.000630
+Epoch: 10/15, Batch: 700/704, Loss: 1.5631, Accuracy: 0.6250, LR: 0.000630
+Epoch 10/15 - Time: 19.75s - Train Loss: 1.2596, Train Accuracy: 0.6702, Val Loss: 1.7137, Val Accuracy: 0.5120
+模型已保存到 ./models/best_model.pkl
+New best model saved to ./models/best_model.pkl, validation accuracy: 0.5120 at epoch 10
+Epoch: 11/15, Batch: 100/704, Loss: 1.2912, Accuracy: 0.7188, LR: 0.000599
+Epoch: 11/15, Batch: 200/704, Loss: 1.3532, Accuracy: 0.7344, LR: 0.000599
+Epoch: 11/15, Batch: 300/704, Loss: 1.1290, Accuracy: 0.7344, LR: 0.000599
+Epoch: 11/15, Batch: 400/704, Loss: 1.0101, Accuracy: 0.7500, LR: 0.000599
+Epoch: 11/15, Batch: 500/704, Loss: 1.4092, Accuracy: 0.6250, LR: 0.000599
+Epoch: 11/15, Batch: 600/704, Loss: 1.1034, Accuracy: 0.7500, LR: 0.000599
+Epoch: 11/15, Batch: 700/704, Loss: 1.0981, Accuracy: 0.7656, LR: 0.000599
+Epoch 11/15 - Time: 19.69s - Train Loss: 1.2180, Train Accuracy: 0.6863, Val Loss: 1.7105, Val Accuracy: 0.5140
+模型已保存到 ./models/best_model.pkl
+New best model saved to ./models/best_model.pkl, validation accuracy: 0.5140 at epoch 11
+Epoch: 12/15, Batch: 100/704, Loss: 1.1500, Accuracy: 0.7031, LR: 0.000569
+Epoch: 12/15, Batch: 200/704, Loss: 1.1109, Accuracy: 0.7344, LR: 0.000569
+Epoch: 12/15, Batch: 300/704, Loss: 1.3723, Accuracy: 0.6406, LR: 0.000569
+Epoch: 12/15, Batch: 400/704, Loss: 1.2994, Accuracy: 0.6719, LR: 0.000569
+Epoch: 12/15, Batch: 500/704, Loss: 1.0056, Accuracy: 0.7500, LR: 0.000569
+Epoch: 12/15, Batch: 600/704, Loss: 1.3409, Accuracy: 0.6562, LR: 0.000569
+Epoch: 12/15, Batch: 700/704, Loss: 1.0540, Accuracy: 0.7656, LR: 0.000569
+Epoch 12/15 - Time: 19.97s - Train Loss: 1.1764, Train Accuracy: 0.7020, Val Loss: 1.6979, Val Accuracy: 0.5206
+模型已保存到 ./models/best_model.pkl
+New best model saved to ./models/best_model.pkl, validation accuracy: 0.5206 at epoch 12
+Epoch: 13/15, Batch: 100/704, Loss: 1.2535, Accuracy: 0.6406, LR: 0.000540
+Epoch: 13/15, Batch: 200/704, Loss: 1.1049, Accuracy: 0.7188, LR: 0.000540
+Epoch: 13/15, Batch: 300/704, Loss: 1.2406, Accuracy: 0.6250, LR: 0.000540
+Epoch: 13/15, Batch: 400/704, Loss: 1.0691, Accuracy: 0.7031, LR: 0.000540
+Epoch: 13/15, Batch: 500/704, Loss: 1.4780, Accuracy: 0.6562, LR: 0.000540
+Epoch: 13/15, Batch: 600/704, Loss: 1.2103, Accuracy: 0.7188, LR: 0.000540
+Epoch: 13/15, Batch: 700/704, Loss: 1.1598, Accuracy: 0.6562, LR: 0.000540
+Epoch 13/15 - Time: 19.39s - Train Loss: 1.1433, Train Accuracy: 0.7146, Val Loss: 1.7090, Val Accuracy: 0.5162
+Epoch: 14/15, Batch: 100/704, Loss: 1.0623, Accuracy: 0.7344, LR: 0.000513
+Epoch: 14/15, Batch: 200/704, Loss: 1.0437, Accuracy: 0.6875, LR: 0.000513
+Epoch: 14/15, Batch: 300/704, Loss: 1.1845, Accuracy: 0.7031, LR: 0.000513
+Epoch: 14/15, Batch: 400/704, Loss: 0.9989, Accuracy: 0.7812, LR: 0.000513
+Epoch: 14/15, Batch: 500/704, Loss: 1.2456, Accuracy: 0.6875, LR: 0.000513
+Epoch: 14/15, Batch: 600/704, Loss: 1.1548, Accuracy: 0.7344, LR: 0.000513
+Epoch: 14/15, Batch: 700/704, Loss: 1.1837, Accuracy: 0.7031, LR: 0.000513
+Epoch 14/15 - Time: 19.07s - Train Loss: 1.1059, Train Accuracy: 0.7315, Val Loss: 1.7133, Val Accuracy: 0.5230
+模型已保存到 ./models/best_model.pkl
+New best model saved to ./models/best_model.pkl, validation accuracy: 0.5230 at epoch 14
+Epoch: 15/15, Batch: 100/704, Loss: 1.0048, Accuracy: 0.7812, LR: 0.000488
+Epoch: 15/15, Batch: 200/704, Loss: 1.0571, Accuracy: 0.7500, LR: 0.000488
+Epoch: 15/15, Batch: 300/704, Loss: 1.0241, Accuracy: 0.7969, LR: 0.000488
+Epoch: 15/15, Batch: 400/704, Loss: 0.9089, Accuracy: 0.8125, LR: 0.000488
+Epoch: 15/15, Batch: 500/704, Loss: 1.1501, Accuracy: 0.7031, LR: 0.000488
+Epoch: 15/15, Batch: 600/704, Loss: 1.1816, Accuracy: 0.6562, LR: 0.000488
+Epoch: 15/15, Batch: 700/704, Loss: 0.9410, Accuracy: 0.7812, LR: 0.000488
+Epoch 15/15 - Time: 18.95s - Train Loss: 1.0752, Train Accuracy: 0.7414, Val Loss: 1.7271, Val Accuracy: 0.5184
+
+Training completed, total time: 278.40 seconds
+Best validation accuracy: 0.5230 at epoch 14
+Best model restored, validation accuracy: 0.5230 from epoch 14
+
+------------------------------------------------------------
+模型可视化
+------------------------------------------------------------
+Generating weight visualization...
+Weight visualization saved to ./models/weights_visualization directory
+训练历史已保存到: ./models/training_history.pkl
+
+============================================================
+训练结果摘要
+============================================================
+最佳验证准确率: 0.5230 (第 14 轮)
+最终训练准确率: 0.7414
+最终验证准确率: 0.5184
+最终训练损失: 1.0752
+最终验证损失: 1.7271
+
+============================================================
+模型参数信息
+============================================================
+隐藏层大小: [512, 64]
+激活函数: relu
+批量大小: 64
+训练轮数: 15
+学习率: 0.001
+动量: 0.9
+权重衰减: 0.0005
+Dropout率: 0.0
+学习率衰减: 0.95
+随机种子: 42
+
+============================================================
+训练完成
+============================================================
