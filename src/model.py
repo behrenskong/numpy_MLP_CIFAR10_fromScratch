@@ -276,7 +276,7 @@ class ThreeLayerNet:
         with open(filepath, 'rb') as f:
             params = pickle.load(f)
         self.set_params(params)
-        print(f"模型已从 {filepath} 加载")
+        print(f"模型参数已从 {filepath} 加载...")
     
     @contextmanager
     def no_grad(self):

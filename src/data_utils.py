@@ -17,7 +17,7 @@ def to_one_hot(y, num_classes=10):
     """
     return np.eye(num_classes)[y]
 
-def download_cifar10(data_dir='./data'):
+def download_cifar10(data_dir='data'):
     """
     下载CIFAR-10数据集
     
@@ -77,7 +77,7 @@ def load_batch(batch_file):
     
     return data, labels
 
-def load_cifar10_data(data_dir='./data', normalize=True, flatten=True, one_hot=True, validation_size=0.1, seed=42):
+def load_cifar10_data(data_dir='data', normalize=True, flatten=True, one_hot=True, validation_size=0.1, seed=42):
     """
     加载CIFAR-10数据集
     

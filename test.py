@@ -4,7 +4,7 @@ import pickle
 from src.model import ThreeLayerNet
 from src.data_utils import load_cifar10_data, BatchIterator
 
-def load_and_test_model(model_path, test_data, batch_size=128):
+def load_and_test_model(model_dir, model_weight_path, model_meta_path, test_data, batch_size=128):
     """
     加载模型并在测试集上评估性能
     
@@ -17,8 +17,9 @@ def load_and_test_model(model_path, test_data, batch_size=128):
     accuracy: 测试集准确率
     """
     # 检查模型文件是否存在
-    if not os.path.exists(model_path):
-        raise FileNotFoundError(f"模型文件不存在: {model_path}")
+    model_weight_path = os.path.join(model_dir, model_weight_path)
+    if not os.path.exists(model_weight_path):
+        raise FileNotFoundError(f"模型文件不存在: {model_weight_path}")
     
     x_test, y_test = test_data
     
@@ -30,23 +31,13 @@ def load_and_test_model(model_path, test_data, batch_size=128):
         output_size = np.max(y_test) + 1  # 假设标签从0开始
     
     # 尝试从模型文件中加载模型结构信息
-    model_config_path = os.path.join(os.path.dirname(model_path), 'model_config.pkl')
-    if os.path.exists(model_config_path):
-        with open(model_config_path, 'rb') as f:
+    model_meta_path = os.path.join(model_dir, model_meta_path)
+    if os.path.exists(model_meta_path):
+        with open(model_meta_path, 'rb') as f:
             model_config = pickle.load(f)
-            print("从配置文件加载模型结构...")
+            print(f"模型配置文件已从 {model_meta_path} 加载...")
     else:
-        # 如果没有配置文件，使用默认值
-        model_config = {
-            'input_size': input_size,
-            'hidden1_size': 512,
-            'hidden2_size': 64,
-            'output_size': output_size,
-            'activation': 'relu',
-            'weight_decay': 5e-4,
-            'dropout': 0.4
-        }
-        print("使用默认模型结构...")
+        raise FileNotFoundError(f"模型配置文件不存在: {model_meta_path}")
     
     # 创建模型
     model = ThreeLayerNet(
@@ -60,7 +51,7 @@ def load_and_test_model(model_path, test_data, batch_size=128):
     )
     
     # 加载模型参数
-    model.load_model(model_path)
+    model.load_model(model_weight_path)
     
     # 创建测试数据迭代器
     test_iterator = BatchIterator(x_test, y_test, batch_size=batch_size, shuffle=False)
@@ -105,10 +96,12 @@ def main():
     print(f"测试集: {x_test.shape[0]}个样本, 特征维度: {x_test.shape[1]}")
     
     # 模型路径
-    model_path = './models/best_model.pkl'
+    model_dir = 'models'
+    model_weight_path = 'best_model.pkl'
+    model_meta_path = 'model_config.pkl'
 
     # 加载模型并测试
-    test_acc = load_and_test_model(model_path, (x_test, y_test))
+    test_acc = load_and_test_model(model_dir, model_weight_path, model_meta_path, (x_test, y_test))
     print(f"测试集准确率: {test_acc:.4f}")
     
 if __name__ == "__main__":

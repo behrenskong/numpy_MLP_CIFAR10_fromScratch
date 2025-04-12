@@ -43,7 +43,7 @@
 - `--weight_decay`: L2正则化强度，默认为5e-4
 - `--seed`: 随机种子，默认为42
 - `--model_dir`: 模型保存目录，默认为'./models'  
-- '--print_frequency': 训练结果打印频率，每多少个batch打印一次结果，默认为100
+- `--print_frequency`: 训练结果打印频率，每多少个batch打印一次结果，默认为100
 
 ---
 **最优模型的训练，使用默认参数直接运行**
@@ -66,21 +66,36 @@ python train.py --batch_size 128 --dropout 0.5 --weight_decay 1e-3
 python train.py --hidden1 1024 --hidden2 128 --activation relu --lr 0.001 --batch_size 128 --epochs 20 --dropout 0.5
 ```
 
-训练过程中会自动保存最佳模型到`models`目录，并生成训练和验证的Loss、Acc曲线，以及最优模型参数可视化结果。
+训练过程中会自动保存最佳模型到`models`目录，训练完成，会自动绘制训练和验证的Loss、Acc曲线，以及最优模型参数可视化结果。
 
 ## 模型测试
 
-要测试模型，有两种方案：  
-1. 把网盘中的`best_model.pkl`和`model_config.pkl`拷贝至`models`文件夹下，然后运行`test.py`
-2. 使用训练脚本`train.py`训练出自己的模型，进行测试
+在训练脚本`train.py`把模型训练好后，会在`models`文件夹下保存最优模型的参数`models\best_model.pkl`和最优模型的配置`models\model_config.pkl`
 
-使用以下命令在测试集上评估训练好的模型性能：
+
+运行`test.py`文件会自动读取模型参数`models\best_model.pkl`和模型结构`models\model_config.pkl`，并在CIFAR-10测试集上对模型进行测试。
+
 
 ```bash
 python test.py
 ```
 
-测试脚本会自动加载`models/best_model.pkl`模型权重和`models/model_config.pkl`模型超参数`meta`文件，并在CIFAR-10测试集上计算准确率。  
+ 
+
+## 已训练好的模型参数的下载与测试
+
+本实验已训练好的模型的参数和`meta`文件（该模型在CIFAR10测试集上的精度为**0.5210**），已上传到百度网盘，下载地址如下：  
+https://pan.baidu.com/s/1zwlKVVZImy7rnNA-bZ6QwQ?pwd=0042  
+提取码: 0042 
+
+CIFAR-10数据也一同上传到了百度网盘，链接同上
+
+将网盘中的模型参数文件`best_model.pkl`和模型配置文件`model_config.pkl`拷贝至`models`文件夹下，运行测试脚本`test.py`，即可验证该模型的测试结果。
+
+```python
+python test.py
+```
+
 
 ## 超参数网格搜索
 
@@ -93,13 +108,13 @@ python hyperparameter_tuning.py
 该脚本会尝试不同的超参数组合，并记录各组合下的验证集性能，帮助找到最优的超参数设置。  
 注意：因时间限制，只搜索了部分超参数组合，**最终的最优模型的参数，是手动调参得出的最优结果，并非网格搜索得出**。
 
-## 模型权重和数据下载
+## 训练日志和超参数网格搜索日志
 
-训练好的模型权重文件已上传到百度网盘，下载地址：  
-https://pan.baidu.com/s/1zwlKVVZImy7rnNA-bZ6QwQ?pwd=0042  
-提取码: 0042 
+`logs`文件夹下存放了训练和超参数搜索过程的详细日志
 
-CIFAR-10数据也一同上传到了百度网盘，链接同上
+- `logs/train/train.log`文件可以查看详细的训练日志
+- `logs/parameter/search.log`文件可以查看详细的超参数网格搜索日志
+- `logs/parameter/hyperparameter_search_report.txt`文件可以查看详细的超参数搜索实验报告
 
 ## 实验报告
 
